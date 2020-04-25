@@ -1,8 +1,10 @@
 <html>
   <head>
-    <meta http-equiv="refresh" content="5" />
+    <script>
+    function redirect() {
+      window.location.href = "com.example.deeplinktest://redirect" + window.location.search;
+    }
+    </script>
   </head>
-  <body>
-    Redirect test 1
-  </body>
+  <body onLoad="redirect()"></body>
 </html>
